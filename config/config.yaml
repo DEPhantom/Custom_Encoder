@@ -1,1 +1,31 @@
+# general
+seed: 42
+workers: 8
+dataset_dir: "./datasets"
 
+# train options
+batch_size: 128
+start_epoch: 0
+epochs: 10
+finetune_epochs: 20
+dataset: "OpenML"
+
+# OpenML dataset options
+dataset_id: 3918
+dataset_class: 2
+
+# model options
+encoder: "std2"
+feature_dim: 21
+encoder_dim: 0
+bin_dim: 38
+emb_dim: 256
+instance_dim: 256
+model_path: "save"
+reload: False
+
+# loss options
+learning_rate: 0.0003
+weight_decay: 0.
+instance_temperature: 0.5
+cluster_temperature: 1.0
