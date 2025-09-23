@@ -20,8 +20,8 @@ Additionally, we provide a set of APIs and a pre-configured dataset (as used in 
 # Usage
 
 There are two ways to install this project.
-Use `pip` if you want to integrate it with any model.
-Use `git clone` if you want to reproduce or compare experiments.
+Use `pip` if you want to integrate it with any model.  
+Use `git clone` if you want to reproduce or compare experiments.  
 
 ## Installation
 
