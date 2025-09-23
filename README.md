@@ -27,7 +27,7 @@ Additionally, we provide a set of APIs and a pre-configured dataset (as used in 
 $ pip install CE-Module
 ```
 
-* Conda from conda-forge channel:
+* Clone the repo:
 
 ```console
 $ git clone https://github.com/DEPhantom/Custom_Encoder.git
