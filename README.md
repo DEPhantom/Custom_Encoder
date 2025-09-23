@@ -12,10 +12,10 @@ Additionally, we provide a set of APIs and a pre-configured dataset (as used in 
 - pandas>=2.0.0
 - numpy==1.24.4
 - pyyaml==5.3.1
-- ucimlrepo
-- scikit-learn
-- munkres
-- openml
+- ucimlrepo>=0.07
+- scikit-learn>=1.5.0
+- munkres>=1.1.4
+- openml>=0.14.2
 
 # Usage
 
