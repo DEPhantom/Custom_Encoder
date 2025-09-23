@@ -30,7 +30,7 @@ $ pip install CE-Module
 * Conda from conda-forge channel:
 
 ```console
-$ conda install -c conda-forge bayesian-optimization
+$ git clone https://github.com/DEPhantom/Custom_Encoder.git
 ```
 
 ## Quick Start
