@@ -24,7 +24,7 @@ Additionally, we provide a set of APIs and a pre-configured dataset (as used in 
 * PyPI (pip):
 
 ```console
-$ pip install bayesian-optimization
+$ pip install CE-Module
 ```
 
 * Conda from conda-forge channel:
