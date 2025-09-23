@@ -2,9 +2,20 @@
 
 This is the code for the paper "A Large-scale Comparison of Customized Feature Encodings under Semi-supervised Learning"
 
+Research on custom encoders is becoming increasingly popular. However, traditionally, defining a custom encoder often required modifying the overall model structure, which can be cumbersome. 
+Our framework allows flexible encoder integration without modifying the model, and supports any PyTorch architecture.
+Additionally, we provide a set of APIs and a pre-configured dataset (as used in our experiments) to help users quickly evaluate encoder performance.
+
 # Dependency
 
-- python>=3.7
+- python>=3.8
+- pandas>=2.0.0
+- numpy==1.24.4
+- pyyaml==5.3.1
+- ucimlrepo
+- scikit-learn
+- munkres
+- openml
 
 # Usage
 
