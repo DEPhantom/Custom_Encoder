@@ -86,7 +86,7 @@ The configuration is divided into the following four sections:
 | `instance_temperature` | float  | Any number     | `0.5`     | Temperature for instance loss   |
 | `cluster_temperature`  | float  | Any number     | `1.0`     | Temperature for cluster loss    |
 
-Below is an example configuration.
+Below is an example configuration.  
 如果要更詳細的教學 請參照...
 
 ```sh
