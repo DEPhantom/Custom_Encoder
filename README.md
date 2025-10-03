@@ -47,8 +47,7 @@ There is a configuration file "config/config.yaml", where one can edit both the 
 |-------------|----------|------------------------|---------|--------------------------------------|
 | `seed`      | int   | Any number         | `42`     | dataset的id             |
 | `workers`   | int   | Any number      | `8`  | DataLoader 的worker數量     |
-| `dataset_dir`   | string  | Any string        | `./datasets` | datasets的下載路徑      |
-| `theme`     | string   | `light` / `dark`        | `light` | UI theme mode                        |
+| `dataset_dir`   | string  | Any string        | `"./datasets"` | datasets的下載路徑      |
 
 | Option Name | Type     | Allowed Values         | Default | Description                          |
 |-------------|----------|------------------------|---------|--------------------------------------|
@@ -56,27 +55,27 @@ There is a configuration file "config/config.yaml", where one can edit both the 
 | `start_epoch`   | int   | Any number      | `0`  | 從哪一個epoch開始訓練     |
 | `epochs`   | int  | Any number        | `10` | 訓練的總epoch      |
 | `finetune_epochs`     | int   | Any number        | `20` | finetune的總epoch                       |
-| `dataset`     | string   | `light` / `dark`        | `light` | 使用的dataset                        |
+| `dataset`     | string   | `light` / `dark`        | `"OpenML"` | 使用的dataset                        |
 | `dataset_id`      | int   | Any number         | `3918`     | dataset的id             |
 | `dataset_class`      | int   | Any number         | `2`     | dataset的分類數量             |
 
 | Option Name | Type     | Allowed Values         | Default | Description                          |
 |-------------|----------|------------------------|---------|--------------------------------------|
-| `encoder`      | string   | Any number         | `42`     | dataset的id             |
-| `feature_dim`   | int   | Any number      | `8`  | DataLoader 的worker數量     |
-| `encoder_dim`   | int  | Any string        | `./datasets` | datasets的下載路徑      |
-| `bin_dim`     | int   | `light` / `dark`        | `light` | 使用的dataset                        |
-| `emb_dim`      | int   | Any number         | `42`     | dataset的id             |
-| `instance_dim`   | int   | Any number      | `8`  | DataLoader 的worker數量     |
-| `model_path`   | string  | Any string        | `./datasets` | datasets的下載路徑      |
+| `encoder`      | string   | `light` / `dark`       | `"std2"`     | dataset的id             |
+| `feature_dim`   | int   | Any number      | `21`  | DataLoader 的worker數量     |
+| `encoder_dim`   | int  | Any number        | `0` | datasets的下載路徑      |
+| `bin_dim`     | int   | Any number        | `38` | 使用的dataset                        |
+| `emb_dim`      | int   | Any number         | `256`     | dataset的id             |
+| `instance_dim`   | int   | Any number      | `256`  | DataLoader 的worker數量     |
+| `model_path`   | string  | Any string        | `"save"` | datasets的下載路徑      |
 | `reload`     | boolean   | `True` / `False`        | `False` | 使用的dataset                        |
 
 | Option Name | Type     | Allowed Values         | Default | Description                          |
 |-------------|----------|------------------------|---------|--------------------------------------|
-| `learning_rate`      | float   | Any number         | `42`     | dataset的id             |
-| `weight_decay`   | float   | Any number      | `8`  | DataLoader 的worker數量     |
-| `instance_temperature`   | float  | Any number        | `./datasets` | datasets的下載路徑      |
-| `cluster_temperature`     | float   | Any number        | `light` | UI theme mode                        |
+| `learning_rate`      | float   | Any number         | `0.0003`     | dataset的id             |
+| `weight_decay`   | float   | Any number      | `0.`  | DataLoader 的worker數量     |
+| `instance_temperature`   | float  | Any number        | `0.5` | datasets的下載路徑      |
+| `cluster_temperature`     | float   | Any number        | `1.0` | UI theme mode                        |
 
 
 ```sh
