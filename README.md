@@ -126,5 +126,11 @@ cluster_temperature: 1.0
 ## Citation
 Please cite our work if you find the dataset or the code useful in your work.
 ```
-...
+	@article{陳正浩 and Zheng-Hao2024,
+       title={半監督學習下自定義編碼特徵的大規模比較},
+       author={陳正浩 and Zheng-Hao Chen},
+       journal={http://ir.lib.ncu.edu.tw:444/thesis/view_etd.asp?URN=111525008},
+       year={2024},
+       url={http://ir.lib.ncu.edu.tw:444/thesis/view_etd.asp?URN=111525008},
+}
 ```
