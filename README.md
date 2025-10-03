@@ -44,7 +44,7 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 There is a configuration file "config/config.yaml", where one can edit both the training and test options.
 The configuration is divided into the following four sections:
 1. 資料集相關:
-1. **Main Configuration**:
+
 | Option Name | Type     | Allowed Values |     Default    | Description                          |
 |-------------|----------|----------------|----------------|--------------------------------------|
 | `seed`        | int    | Any number     | `42`           | ID of the ucirepo dataset          |
@@ -52,6 +52,7 @@ The configuration is divided into the following four sections:
 | `dataset_dir` | string | Any string     | `"./datasets"` | Path to download the datasets        |
 
 2. 訓練相關:
+   
 | Option Name      | Type   | Allowed Values                                | Default    | Description                                 |
 |------------------|--------|-----------------------------------------------|------------|---------------------------------------------|
 | `batch_size`     | int    | Any number                                    | `128`      | Batch size                                  |
@@ -64,6 +65,7 @@ The configuration is divided into the following four sections:
 
 
 3. 模型架構:
+   
 | Option Name    | Type    | Allowed Values                                | Default    | Description                                     |
 |----------------|---------|-----------------------------------------------|------------|-------------------------------------------------|
 | `encoder`      | string  | `None` / `Periodic` / `PieceWise` / `std`     | `"None"`   | Encoding method to use                         |
@@ -76,6 +78,7 @@ The configuration is divided into the following four sections:
 
 
 4. 模型參數:
+   
 | Option Name           | Type   | Allowed Values | Default   | Description                     |
 |------------------------|--------|----------------|-----------|---------------------------------|
 | `learning_rate`        | float  | Any number     | `0.0003`  | Learning rate                   |
