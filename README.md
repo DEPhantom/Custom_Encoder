@@ -42,40 +42,47 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 ## Configuration
 
 There is a configuration file "config/config.yaml", where one can edit both the training and test options.
-分為四大類
-| Option Name | Type     | Allowed Values         | Default | Description                          |
-|-------------|----------|------------------------|---------|--------------------------------------|
-| `seed`      | int   | Any number         | `42`     | dataset的id             |
-| `workers`   | int   | Any number      | `8`  | DataLoader 的worker數量     |
-| `dataset_dir`   | string  | Any string        | `"./datasets"` | datasets的下載路徑      |
+The configuration is divided into the following four sections:
+1. 資料集相關:
+1. **Main Configuration**:
+| Option Name | Type     | Allowed Values |     Default    | Description                          |
+|-------------|----------|----------------|----------------|--------------------------------------|
+| `seed`        | int    | Any number     | `42`           | ID of the ucirepo dataset          |
+| `workers`     | int    | Any number     | `8`            | Number of workers for DataLoader  |
+| `dataset_dir` | string | Any string     | `"./datasets"` | Path to download the datasets        |
 
-| Option Name | Type     | Allowed Values         | Default | Description                          |
-|-------------|----------|------------------------|---------|--------------------------------------|
-| `batch_size`      | int   | Any number         | `128`     | batch size             |
-| `start_epoch`   | int   | Any number      | `0`  | 從哪一個epoch開始訓練     |
-| `epochs`   | int  | Any number        | `10` | 訓練的總epoch      |
-| `finetune_epochs`     | int   | Any number        | `20` | finetune的總epoch                       |
-| `dataset`     | string   | `light` / `dark`        | `"OpenML"` | 使用的dataset                        |
-| `dataset_id`      | int   | Any number         | `3918`     | dataset的id             |
-| `dataset_class`      | int   | Any number         | `2`     | dataset的分類數量             |
+2. 訓練相關:
+| Option Name      | Type   | Allowed Values                                | Default    | Description                                 |
+|------------------|--------|-----------------------------------------------|------------|---------------------------------------------|
+| `batch_size`     | int    | Any number                                    | `128`      | Batch size                                  |
+| `start_epoch`    | int    | Any number                                    | `0`        | Epoch to start training from                |
+| `epochs`         | int    | Any number                                    | `10`       | Total number of training epochs             |
+| `finetune_epochs`| int    | Any number                                    | `20`       | Total number of finetuning epochs           |
+| `dataset`        | string | `Breast` / `Wine` / `Spambase` / `OpenML`     | `"OpenML"` | Dataset to use                              |
+| `dataset_id`     | int    | Any number                                    | `3918`     | ID of the dataset on OpenML                 |
+| `dataset_class`  | int    | Any number                                    | `2`        | Number of classes in the OpenML dataset     |
 
-| Option Name | Type     | Allowed Values         | Default | Description                          |
-|-------------|----------|------------------------|---------|--------------------------------------|
-| `encoder`      | string   | `light` / `dark`       | `"std2"`     | dataset的id             |
-| `feature_dim`   | int   | Any number      | `21`  | DataLoader 的worker數量     |
-| `encoder_dim`   | int  | Any number        | `0` | datasets的下載路徑      |
-| `bin_dim`     | int   | Any number        | `38` | 使用的dataset                        |
-| `emb_dim`      | int   | Any number         | `256`     | dataset的id             |
-| `instance_dim`   | int   | Any number      | `256`  | DataLoader 的worker數量     |
-| `model_path`   | string  | Any string        | `"save"` | datasets的下載路徑      |
-| `reload`     | boolean   | `True` / `False`        | `False` | 使用的dataset                        |
 
-| Option Name | Type     | Allowed Values         | Default | Description                          |
-|-------------|----------|------------------------|---------|--------------------------------------|
-| `learning_rate`      | float   | Any number         | `0.0003`     | dataset的id             |
-| `weight_decay`   | float   | Any number      | `0.`  | DataLoader 的worker數量     |
-| `instance_temperature`   | float  | Any number        | `0.5` | datasets的下載路徑      |
-| `cluster_temperature`     | float   | Any number        | `1.0` | UI theme mode                        |
+3. 模型架構:
+| Option Name    | Type    | Allowed Values                                | Default    | Description                                     |
+|----------------|---------|-----------------------------------------------|------------|-------------------------------------------------|
+| `encoder`      | string  | `None` / `Periodic` / `PieceWise` / `std`     | `"None"`   | Encoding method to use                         |
+| `feature_dim`  | int     | Any number                                    | `21`       | Dimension of input features                    |
+| `bin_dim`      | int     | Any number                                    | `38`       | Dimension after PieceWise encodin              |
+| `emb_dim`      | int     | Any number                                    | `256`      | Dimension of the embedding                     |
+| `instance_dim` | int     | Any number                                    | `256`      | Embedding dimension for finetuning             |
+| `model_path`   | string  | Any string                                    | `"save"`   | Path to save the trained model                 |
+| `reload`       | boolean | `True` / `False`                              | `False`    | Whether to reload an existing model checkpoint |
+
+
+4. 模型參數:
+| Option Name           | Type   | Allowed Values | Default   | Description                     |
+|------------------------|--------|----------------|-----------|---------------------------------|
+| `learning_rate`        | float  | Any number     | `0.0003`  | Learning rate                   |
+| `weight_decay`         | float  | Any number     | `0.0`     | Weight decay                    |
+| `instance_temperature` | float  | Any number     | `0.5`     | Temperature for instance loss   |
+| `cluster_temperature`  | float  | Any number     | `1.0`     | Temperature for cluster loss    |
+
 
 
 ```sh
@@ -96,9 +103,8 @@ dataset_id: 3918
 dataset_class: 2
 
 # model options
-encoder: "std2"
+encoder: "None"
 feature_dim: 21
-encoder_dim: 0
 bin_dim: 38
 emb_dim: 256
 instance_dim: 256
