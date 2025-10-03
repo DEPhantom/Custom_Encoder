@@ -41,9 +41,9 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 
 ## Configuration
 
-There is a configuration file "config/config.yaml", where one can edit both the training and test options.
+There is a configuration file "config/config.yaml", where one can edit both the training and test options.  
 The configuration is divided into the following four sections:
-1. 資料集相關:
+1. Dataset Options:
 
 | Option Name | Type     | Allowed Values |     Default    | Description                          |
 |-------------|----------|----------------|----------------|--------------------------------------|
@@ -51,7 +51,7 @@ The configuration is divided into the following four sections:
 | `workers`     | int    | Any number     | `8`            | Number of workers for DataLoader  |
 | `dataset_dir` | string | Any string     | `"./datasets"` | Path to download the datasets        |
 
-2. 訓練相關:
+2. Training Options:
    
 | Option Name      | Type   | Allowed Values                                | Default    | Description                                 |
 |------------------|--------|-----------------------------------------------|------------|---------------------------------------------|
@@ -64,7 +64,7 @@ The configuration is divided into the following four sections:
 | `dataset_class`  | int    | Any number                                    | `2`        | Number of classes in the OpenML dataset     |
 
 
-3. 模型架構:
+3. Model Architecture Options:
    
 | Option Name    | Type    | Allowed Values                                | Default    | Description                                     |
 |----------------|---------|-----------------------------------------------|------------|-------------------------------------------------|
@@ -77,7 +77,7 @@ The configuration is divided into the following four sections:
 | `reload`       | boolean | `True` / `False`                              | `False`    | Whether to reload an existing model checkpoint |
 
 
-4. 模型參數:
+4. Model Parameters:
    
 | Option Name           | Type   | Allowed Values | Default   | Description                     |
 |------------------------|--------|----------------|-----------|---------------------------------|
@@ -86,7 +86,8 @@ The configuration is divided into the following four sections:
 | `instance_temperature` | float  | Any number     | `0.5`     | Temperature for instance loss   |
 | `cluster_temperature`  | float  | Any number     | `1.0`     | Temperature for cluster loss    |
 
-
+Below is an example configuration.
+如果要更詳細的教學 請參照...
 
 ```sh
 # general
