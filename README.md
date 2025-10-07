@@ -123,7 +123,12 @@ cluster_temperature: 1.0
 
 ```
 
-## Citation
+# Dataset
+
+關於資料集的分類與詳細資料
+請參照論文的附錄 B 資料集
+
+# Citation
 Please cite our work if you find the dataset or the code useful in your work.
 ```
 	@article{陳正浩 and Zheng-Hao2024,
