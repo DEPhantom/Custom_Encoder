@@ -39,6 +39,19 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 
 ## Quick Start
 
+這裡有兩種方式執行
+1. 快速復現實驗
+使用自訂義的encoder 並將SCARF模型作為base model
+旨在比較不同encoder
+```console
+python example.py
+```
+Aboud config.yaml的配置 請參考教學..
+
+2. 自訂編碼及模型
+若要應用CE-Module到不同的module上
+請參照詳細教學
+
 ## Configuration
 
 There is a configuration file "config/config.yaml", where one can edit both the training and test options.  
