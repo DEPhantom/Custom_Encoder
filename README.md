@@ -39,18 +39,22 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 
 ## Quick Start
 
-這裡有兩種方式執行
-1. 快速復現實驗
-使用自訂義的encoder 並將SCARF模型作為base model
-旨在比較不同encoder
+There are two ways to run this project:
+
+1. Quick Experiment Reproduction
+
+Use a custom encoder and apply the SCARF model as the base model.
+This mode is designed to compare different encoders.
 ```console
 python example.py
 ```
-Aboud config.yaml的配置 請參考教學..
+If you want to modify example.py to suit your own setup, check out the [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/based_tutorial.ipynb).
+For details on how to configure config.yaml, please refer to the [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/config_tutorial.ipynb).
 
-2. 自訂編碼及模型
-若要應用CE-Module到不同的module上
-請參照詳細教學
+2. Custom Encoder and Model
+
+To apply the CE-Module to different modules,
+please follow the detailed [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/advanced_tutorial.ipynb).
 
 ## Configuration
 
@@ -99,8 +103,8 @@ The configuration is divided into the following four sections:
 | `instance_temperature` | float  | Any number     | `0.5`     | Temperature for instance loss   |
 | `cluster_temperature`  | float  | Any number     | `1.0`     | Temperature for cluster loss    |
 
-Below is an example configuration.  
-如果要更詳細的教學 請參照...
+Below is an example configuration.
+For a more detailed tutorial, please refer to the [documentation](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/config_tutorial.ipynb).
 
 ```sh
 # general
@@ -138,8 +142,7 @@ cluster_temperature: 1.0
 
 # Dataset
 
-關於資料集的分類與詳細資料
-請參照論文的附錄 B 資料集
+Dataset classification and additional details can be found in Appendix B of the paper.
 
 # Citation
 Please cite our work if you find the dataset or the code useful in your work.
