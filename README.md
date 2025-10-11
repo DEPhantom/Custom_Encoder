@@ -41,7 +41,7 @@ $ git clone https://github.com/DEPhantom/Custom_Encoder.git
 
 There are two ways to run this project:
 
-1. Quick Experiment Reproduction
+## 1. Quick Experiment Reproduction
 
 Use a custom encoder and apply the SCARF model as the base model.
 This mode is designed to compare different encoders.
@@ -51,7 +51,7 @@ python example.py
 If you want to modify example.py to suit your own setup, check out the [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/based_tutorial.ipynb).
 For details on how to configure config.yaml, please refer to the [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/config_tutorial.ipynb).
 
-2. Custom Encoder and Model
+### 2. Custom Encoder and Model
 
 To apply the CE-Module to different modules,
 please follow the detailed [tutorial](https://github.com/DEPhantom/Custom_Encoder/blob/main/examples/advanced_tutorial.ipynb).
